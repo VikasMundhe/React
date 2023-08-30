@@ -6,7 +6,7 @@ class Todo{
     constructor(text:string)
     {
         this.text=text;
-        this.id=Math.random().toString();
+        this.id = new Date().toISOString();
     }
 }
 export default Todo;
